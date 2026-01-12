@@ -13,9 +13,10 @@
     </style>
     <style>
         h2{
-            background-color: dodgerblue;
+            background-color: darkblue;
             color: whitesmoke;
             text-align: center;
+            
         }
     </style>
     <style>
@@ -30,10 +31,11 @@
     </style>
 <style>
         select{
-            background-color: Green;
+            background-color: darkblue;
             color: white;
             width: 39%;
             height: 1cm;
+            border-color: whitesmoke;
         }
     </style>
 
@@ -50,6 +52,19 @@
             background-color: lightseagreen;
             color: yellow;
             
+        }
+    </style>
+    <style>
+        label{
+            width: 100px;
+            display: inline-block;
+        }
+    </style>
+    <style>
+        form{
+            background-color: darkblue;
+            color: whitesmoke;
+            text-align: center;
         }
     </style>
 </head>
@@ -123,6 +138,8 @@ like Ultron and Thanos</i></b>,and evolving rosters, becoming "Earth's Mightiest
 defending <b><i>against global and cosmic dangers</i></b>,both in comics
 <b><i>(Earth-616)</i></b> and the popular Marvel Cinematic Universe (MCU).</p>
 
+<h2>Please fill the form</h2>
+
  <form>
         <select>
         <option>--Academic--</option>    
@@ -192,27 +209,36 @@ defending <b><i>against global and cosmic dangers</i></b>,both in comics
 <form>
         <fieldset>
                 <legend><b><u>Personal Information</u></b></legend>
+                <br>
+                
 
-        <b>First Name</b> : <input type="text">
+        <b><label><u>First Name</u></label></b> : <input type="text"
+        placeholder="Enter your first name">
         <br>
         <br>
-        <b>Last Name</b> : <input type="text">
+        <b><label><u>Last Name</u></label></b> : <input type="text"
+        placeholder="Enter your last name">
         <br>    
         <br>
-        <b>Father's Name</b> : <input type="text">
+        <b><label><u>Father's Name</u></label></b> : <input type="text"
+        placeholder="Enter your father's name">
         <br>
         <br>
-        <b>Mother's Name</b> : <input type="text">
+        <b><label><u>Mother's Name</u></label></b> : <input type="text"
+        placeholder="Enter your mother's name">
         <br>
         <br>
-        <b>Gender</b> : <input type="radio" name="gender"> Male
-                 <input type="radio" name="gender"> Female
+        <b><label><u>Gender</u></label></b> :
+         <input type="radio" name="gender"> Male
+         <input type="radio" name="gender"> Female
         <br>
         <br>         
-        <b>Phone Number</b> : <input type="number">
+        <b><label><u>Phone Number</u></label></b> : <input type="number"
+         placeholder="Enter your phone number">
         <br>
         <br>
-        <b>Email</b> : <input type="email">
+        <b><label><u>Email</u></label></b> : <input type="email"
+        placeholder="Enter your email address">
         <br>
         <br>
        
@@ -220,15 +246,15 @@ defending <b><i>against global and cosmic dangers</i></b>,both in comics
         
         <fieldset>
             <legend><b><u><i>Registration Form</i></u></b></legend>
-        <b><i>Username :</i></b>
-             <input type="email">
+        <b><i><label><u>Username :</u></label></i></b>
+             <input type="email" placeholder="Enter your email">
         <br>
         <br>
-        <b><i>Password :</i></b>
-             <input type="password"><br>
+        <b><i><label><u>Password :</u></label></i></b>
+             <input type="password" placeholder="Enter your password"><br>
              <br>
-        <b><i>Secret Code :</i></b>
-             <input type="text" required>
+        <b><i><label><u>Secret Code :</u></label></i></b>
+             <input type="text" required placeholder="Enter your secret code">
              <br>
              <br>
 
