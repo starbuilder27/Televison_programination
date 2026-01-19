@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .a{
-           background-color:blue;
-           color:white;
-           text-align: center;
+        .a {
+            background-color: blue;
+            color: white;
+            text-align: center;
         }
     </style>
     <style>
-        h2{
+        h2 {
             background-color: darkblue;
             color: whitesmoke;
             text-align: center;
-            
+
         }
     </style>
     <style>
-        p{
-           text-align:justify;
+        p {
+            text-align: justify;
         }
     </style>
     <style>
-        a{
+        a {
             text-decoration: none;
         }
     </style>
-<style>
-        select{
+    <style>
+        select {
             background-color: darkblue;
             color: white;
             width: 39%;
@@ -43,231 +44,237 @@
         select option {
             background-color: lightslategray;
             color: black;
-            
+
         }
     </style>
 
     <style>
-        select optgroup{
+        select optgroup {
             background-color: lightseagreen;
             color: yellow;
-            
+
         }
     </style>
     <style>
-        label{
+        label {
             width: 100px;
             display: inline-block;
         }
     </style>
     <style>
-        form{
+        form {
             background-color: darkblue;
             color: whitesmoke;
             text-align: center;
         }
     </style>
-    
+    <style>
+        body {
+            background-image: url('data:image/jpeg;base64,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');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+
 </head>
-<body bgcolor="yellow">
-<div style="background-color: aqua;text-align: center;">
+
+<body>
+    <div style="background-color: aqua;text-align: center;">
         <h1 class="a"> <u><i>" History of movies "</i></u></h1>
-    </div>  
+    </div>
     <h3>As you know that movies are the best way to entertain
-     our eyes and ears so lets start
-    our journey to see the history of movies and there are many types of movies
-     like <mark><big>action movies,comedy movies,romantic movies,
-    thriller movies</big></mark>etc.</h3>
+        our eyes and ears so lets start
+        our journey to see the history of movies and there are many types of movies
+        like <mark><big>action movies,comedy movies,romantic movies,
+                thriller movies</big></mark>etc.</h3>
 
-<div style="text-align: center;">  <img src="movie.jpg" width="527" 
-    height="325" target="_blank">   
-     
-<a href="#Movie 1 : Avatar">
-    <h1 class="a"><u><i>Movie 1 : Avatar</i></u></h1>
-</a>
-<a href="#Movie 2 : Titanic">
-<h1 class="a"><u><i>Movie 2 : Titanic</i></u></h1>
-</a>
-<a href="#Movie 3 : Avengers">
-<h1 class="a"><u><i>Movie 3 : Avengers</i></u></h1>
-</a>
-<a href="#Movie 4 : Chhavva">
-<h1 class="a"><u><i>Movie 4 : Chhavva</i></u></h1>
-</a>
-<a href="#Movie 5 : Pathan">
-<h1 class="a"><u><i>Movie 5 : Pathan</i></u></h1>
-</a>
+    <div style="text-align: center;"> <img src="movie.jpg" width="527" height="325" target="_blank">
 
-<hr>
+        <a href="#Movie 1 : Avatar">
+            <h1 class="a"><u><i>Movie 1 : Avatar</i></u></h1>
+        </a>
+        <a href="#Movie 2 : Titanic">
+            <h1 class="a"><u><i>Movie 2 : Titanic</i></u></h1>
+        </a>
+        <a href="#Movie 3 : Avengers">
+            <h1 class="a"><u><i>Movie 3 : Avengers</i></u></h1>
+        </a>
+        <a href="#Movie 4 : Chhavva">
+            <h1 class="a"><u><i>Movie 4 : Chhavva</i></u></h1>
+        </a>
+        <a href="#Movie 5 : Pathan">
+            <h1 class="a"><u><i>Movie 5 : Pathan</i></u></h1>
+        </a>
 
-<h2 id="Movie 1 : Avatar"><u><i>Movie 1 : Avatar</i></u></h2>
+        <hr>
 
-<p><i><b>"Avatar"</b></i> refers to both a Hindu concept of divine incarnation and a 
-major James Cameron sci-fi franchise, most famously the<i><b> 2009 film</b></i> about 
-blue-skinned Na'vi on the<i><b> moon Pandora</b></i>, where humans use genetically
-engineered Na'vi bodies (Avatars) to interact with them, exploring
-themes of colonialism, environmentalism, and indigenous culture.
-The term literally means<i><b> "descent" in Sanskrit</b></i>, signifying a deity 
-taking earthly form, tying into the<i><b> franchise's depiction</b></i> of humans 
-descending to Pandora.</p> 
-<hr>
+        <h2 id="Movie 1 : Avatar"><u><i>Movie 1 : Avatar</i></u></h2>
 
-<h2 id="Movie 2 : Titanic"><u><i>Movie 2 : Titanic</i></u></h2>
-<p><b><i>The RMS Titanic</i></b> was a British luxury liner that famously sank on its
-maiden voyage in April 1912 after hitting an iceberg, resulting in the
-deaths of over<i><b> 1,500 people</b></i> and leading to major maritime safety reforms
-Known as the largest and most luxurious ship of its time, it was considered
-"unsinkable" but struck an iceberg on<i><b> April 14, 1912</b></i>, breaking apart
-and sinking in the early hours of<i><b> April 15, 1912</b></i>. The disaster sparked 
-investigations,changed safety regulations, and cemented the ship's place in 
-popular culture.</p>
+        <p><i><b>"Avatar"</b></i> refers to both a Hindu concept of divine incarnation and a
+            major James Cameron sci-fi franchise, most famously the<i><b> 2009 film</b></i> about
+            blue-skinned Na'vi on the<i><b> moon Pandora</b></i>, where humans use genetically
+            engineered Na'vi bodies (Avatars) to interact with them, exploring
+            themes of colonialism, environmentalism, and indigenous culture.
+            The term literally means<i><b> "descent" in Sanskrit</b></i>, signifying a deity
+            taking earthly form, tying into the<i><b> franchise's depiction</b></i> of humans
+            descending to Pandora.</p>
+        <hr>
 
-<h3>This video provides</h3>
-<a href="https://www.youtube.com/watch?v=id00R-3OmJ0" 
-target="_blank"> <h3 style="border-style: inset">Titanic</a>
-a timeline of the Titanic's sinking:</h3>
-<hr>
+        <h2 id="Movie 2 : Titanic"><u><i>Movie 2 : Titanic</i></u></h2>
+        <p><b><i>The RMS Titanic</i></b> was a British luxury liner that famously sank on its
+            maiden voyage in April 1912 after hitting an iceberg, resulting in the
+            deaths of over<i><b> 1,500 people</b></i> and leading to major maritime safety reforms
+            Known as the largest and most luxurious ship of its time, it was considered
+            "unsinkable" but struck an iceberg on<i><b> April 14, 1912</b></i>, breaking apart
+            and sinking in the early hours of<i><b> April 15, 1912</b></i>. The disaster sparked
+            investigations,changed safety regulations, and cemented the ship's place in
+            popular culture.</p>
 
-<h2 id="Movie 3 : Avengers"><u><i>Movie 3 : Avengers</i></u></h2>
+        <h3>This video provides</h3>
+        <a href="https://www.youtube.com/watch?v=id00R-3OmJ0" target="_blank">
+            <h3 style="border-style: inset">Titanic
+        </a>
+        a timeline of the Titanic's sinking:</h3>
+        <hr>
 
-<p><i><b>The Avengers are Marvel's premier superhero team </b></i>,formed by S.H.I.E.L.D.
-to counter threats too big for single heroes, notably Loki's Chitauri
-invasion, uniting Iron Man, Captain America, Thor, Hulk, Black Widow,
-and Hawkeye initially. Their history involves growth, internal conflicts
-(like the Sokovia Accords splitting them),<b><i> major battles against villains
-like Ultron and Thanos</i></b>,and evolving rosters, becoming "Earth's Mightiest Heroes"
-defending <b><i>against global and cosmic dangers</i></b>,both in comics
-<b><i>(Earth-616)</i></b> and the popular Marvel Cinematic Universe (MCU).</p>
+        <h2 id="Movie 3 : Avengers"><u><i>Movie 3 : Avengers</i></u></h2>
 
-<h2>Please fill the form</h2>
+        <p><i><b>The Avengers are Marvel's premier superhero team </b></i>,formed by S.H.I.E.L.D.
+            to counter threats too big for single heroes, notably Loki's Chitauri
+            invasion, uniting Iron Man, Captain America, Thor, Hulk, Black Widow,
+            and Hawkeye initially. Their history involves growth, internal conflicts
+            (like the Sokovia Accords splitting them),<b><i> major battles against villains
+                    like Ultron and Thanos</i></b>,and evolving rosters, becoming "Earth's Mightiest Heroes"
+            defending <b><i>against global and cosmic dangers</i></b>,both in comics
+            <b><i>(Earth-616)</i></b> and the popular Marvel Cinematic Universe (MCU).
+        </p>
 
- <form>
-        <select>
-        <option>--Academic--</option>    
-        <option>9th</option>
-        <option>10th</option>
-        <option>12th</option>
-        <option>Graduation</option>
-        <option>Post Graduation</option>
-        </select>    
-</form>   
-    <br>
-    
-<form>
-    <select>
-        <option>--Computer Course--</option>
-        <optgroup label="3 months course"></optgroup>    
-        <option>BCC</option>
-        <option>CCF</option>
-         <optgroup label="6 months course"></optgroup>
-        <option>DCA</option>
-        <option>DFA</option>
-         <optgroup label="1 Year course"></optgroup>
-        <option>ADCA</option>
-        <option>ADFA</option>
-    </select>  
-</form>
-<br>
+        <h2>Please fill the form</h2>
 
-<form>
-    <select>
-        <option>--Language--</option>
-        <option>English</option>
-        <option>Hindi</option>
-        <option>Marathi</option>
-        <option>Telugu</option>
-        <option>Tamil</option>
-        <option>Kannada</option>
-    </select>
-</form>
-<br>
+        <form>
+            <select>
+                <option>--Academic--</option>
+                <option>9th</option>
+                <option>10th</option>
+                <option>12th</option>
+                <option>Graduation</option>
+                <option>Post Graduation</option>
+            </select>
+        </form>
+        <br>
 
-<form>
-    <select>
-        <option>--Hobbies--</option>
-        <option>Reading</option>
-        <option>Writing</option>
-        <option>Drawing</option>
-        <option>Painting</option>
-        <option>Music</option>
-        <option>Games</option>
-    </select>
-</form>
-<br>
-  
-<form>
-    <select>
-        <option>--Gender--</option>
-        <option>Male</option>
-        <option>Female</option>
-        <option>Other</option>
-    </select>
-</form>  
-<br>
-<form>
-   
-</form>
-<form>
-        <fieldset>
+        <form>
+            <select>
+                <option>--Computer Course--</option>
+                <optgroup label="3 months course"></optgroup>
+                <option>BCC</option>
+                <option>CCF</option>
+                <optgroup label="6 months course"></optgroup>
+                <option>DCA</option>
+                <option>DFA</option>
+                <optgroup label="1 Year course"></optgroup>
+                <option>ADCA</option>
+                <option>ADFA</option>
+            </select>
+        </form>
+        <br>
+
+        <form>
+            <select>
+                <option>--Language--</option>
+                <option>English</option>
+                <option>Hindi</option>
+                <option>Marathi</option>
+                <option>Telugu</option>
+                <option>Tamil</option>
+                <option>Kannada</option>
+            </select>
+        </form>
+        <br>
+
+        <form>
+            <select>
+                <option>--Hobbies--</option>
+                <option>Reading</option>
+                <option>Writing</option>
+                <option>Drawing</option>
+                <option>Painting</option>
+                <option>Music</option>
+                <option>Games</option>
+            </select>
+        </form>
+        <br>
+
+        <form>
+            <select>
+                <option>--Gender--</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+        </form>
+        <br>
+        <form>
+
+        </form>
+        <form>
+            <fieldset>
                 <legend><b><u>Personal Information</u></b></legend>
                 <br>
-                
 
-        <b><label><u>First Name</u></label></b> : <input type="text"
-        placeholder="Enter your first name">
-        <br>
-        <br>
-        <b><label><u>Last Name</u></label></b> : <input type="text"
-        placeholder="Enter your last name">
-        <br>    
-        <br>
-        <b><label><u>Father's Name</u></label></b> : <input type="text"
-        placeholder="Enter your father's name">
-        <br>
-        <br>
-        <b><label><u>Mother's Name</u></label></b> : <input type="text"
-        placeholder="Enter your mother's name">
-        <br>
-        <br>
-        <b><label><u>Gender</u></label></b> :
-         <input type="radio" name="gender"> Male
-         <input type="radio" name="gender"> Female
-        <br>
-        <br>         
-        <b><label><u>Phone Number</u></label></b> : <input type="number"
-         placeholder="Enter your phone number" required maxlength="10">
-        <br>
-        <br>
-        <b><label><u>Email</u></label></b> : <input type="email"
-        placeholder="Enter your email address">
-        <br>
-        <br>
-       
-<form>
-        
-        <fieldset>
-            <legend><b><u><i>Registration Form</i></u></b></legend>
-        <b><i><label><u>Username :</u></label></i></b>
-             <input type="email" placeholder="Enter your email">
-        <br>
-        <br>
-        <b><i><label><u>Password :</u></label></i></b>
-             <input type="password" placeholder="Enter your password" required><br>
-             <br>
-        <b><i><label><u>Secret Code :</u></label></i></b>
-             <input type="text" required placeholder="Enter your secret code">
-             <br>        
 
-        </fieldset>
-    </form><br><br>
-    NOTE : <input type="text" size="40" 
-         value="Please check your data before the submission" readonly> <br><br>
-        <input type="submit" value="Submit">
-       
+                <b><label><u>First Name</u></label></b> : <input type="text" placeholder="Enter your first name">
+                <br>
+                <br>
+                <b><label><u>Last Name</u></label></b> : <input type="text" placeholder="Enter your last name">
+                <br>
+                <br>
+                <b><label><u>Father's Name</u></label></b> : <input type="text" placeholder="Enter your father's name">
+                <br>
+                <br>
+                <b><label><u>Mother's Name</u></label></b> : <input type="text" placeholder="Enter your mother's name">
+                <br>
+                <br>
+                <b><label><u>Gender</u></label></b> :
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+                <br>
+                <br>
+                <b><label><u>Phone Number</u></label></b> : <input type="number" placeholder="Enter your phone number"
+                    required maxlength="10">
+                <br>
+                <br>
+                <b><label><u>Email</u></label></b> : <input type="email" placeholder="Enter your email address">
+                <br>
+                <br>
 
-    </form>
-   
+                <form>
+
+                    <fieldset>
+                        <legend><b><u><i>Registration Form</i></u></b></legend>
+                        <b><i><label><u>Username :</u></label></i></b>
+                        <input type="email" placeholder="Enter your email">
+                        <br>
+                        <br>
+                        <b><i><label><u>Password :</u></label></i></b>
+                        <input type="password" placeholder="Enter your password" required><br>
+                        <br>
+                        <b><i><label><u>Secret Code :</u></label></i></b>
+                        <input type="text" required placeholder="Enter your secret code">
+                        <br>
+
+                    </fieldset>
+                </form><br><br>
+                NOTE : <input type="text" size="40" value="Please check your data before the submission" readonly>
+                <br><br>
+                <input type="submit" value="Submit">
+
+
+        </form>
+
 
 </body>
+
 </html>
-    
