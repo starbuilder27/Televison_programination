@@ -6,6 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        function cube()
+        {
+        var a=document.getElementById("value1").value;
+        document.write("The cube of "+a+" = "+a*a*a);
+        }
+    </script>
+
+      <input type="text" id="value1">
+      <button type="button" onclick="cube()">Cube</button>
 </body>
 </html>
