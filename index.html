@@ -23,16 +23,18 @@
        overflow:auto; 
         
     }
-    
+    #e{
+        text-align: center;
+    }
 </style>
 
 </head>
 
 <body>
   <script>
-    // alert("Welcome to Yatharth Gupta's website");
-    // confirm("Press OK for new notifications");
-    // prompt("If you want to see this website for free,so please enter name first")
+    alert("Welcome to Yatharth Gupta's website");
+    confirm("Press OK for new notifications");
+    prompt("If you want to see this website for free,so please enter name first")
   
 
   </script>
@@ -228,7 +230,7 @@
         movies are also there so click on this link</i><a href="second.html" target="_blank">http/bigcartoons/..</a>for
       understanding the history and many things else about movies or we can say films too </u></h2>
 
-  <div style="text-align: center;"><img src="gettyimages-1181998212-612x612.jpg" alt="bye" width="550" height="390">
+  <div style="text-align: center;"><img src="gettyimages-1181998212-612x612.jpg" alt="bye" width="400" height="260">
 
    <div style="background-color: antiquewhite;"><h1><p><i><u><mark>
   " Made By Yatharth Gupta "</mark></u></i></p></h1></div>
@@ -237,19 +239,28 @@
       {
             open("https://www.google.com")
       }
-         function myyath()
+    function myyath()
     {
         open("https://www.linkedin.com")
     }
   </script>
           <button onclick="myyathu()">Open Google</button>
           <button onclick="myyath()">Open Linkedin</button>
-      
+    
+          <h1><u><i>Click on the image to see the image in big size</i></u></h1>          
 
-    <h3>So,every thing or every movie has its own history and had its own journey
-        to make it as a movie for clear understanding,
-        and it's Historical story of past and it also tells about past time people
-        and their lifestyle </h3>
+    <script>
+        function big_image(x){
+            x.style.width="230px";
+            x.style.height="200px";
+        }
+        function normal_image(x){
+            x.style.width="50px";
+            x.style.height="60px";
+        }
+    </script>
+    <img id="e" src="photo-1575936123452-b67c3203c357.avif" width="70" height="80" onmouseover="big_image(this)" onmouseout="normal_image(this)">
+
         <h1><u><i>So,now you can use my website for your maths homework you can use it for some tricky questions see</u></i><h1>
              <script>
         function cube()
@@ -279,14 +290,8 @@
     <input type="text"placeholder="Enter second number" id="value2">
     <button type="button" onclick="add()">Addition</button>
     <p id="yathu"></p>
-
-
-
-
-
-
-        
-<i class="fas fa-circle-user"></i>           <i class="fas fa-trophy"></i><br><br><i class="fas fa-anchor"></i><i class="fas fa-phone"></i>      <i class="fas fa-clock"></i>    <br><br><i class="fas fa-image"></i>      <i class="fas fa-utensils"></i> 
+    
+    <i class="fas fa-circle-user"></i>           <i class="fas fa-trophy"></i><br><br><i class="fas fa-anchor"></i><i class="fas fa-phone"></i>      <i class="fas fa-clock"></i>    <br><br><i class="fas fa-image"></i>      <i class="fas fa-utensils"></i> 
  
  <i class="fas fa-airplay"></i>     
  <i class="fas fa-bell"></i>         
