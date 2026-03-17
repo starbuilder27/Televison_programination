@@ -1,0 +1,227 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Brother 🎉</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg,#ff9a9e,#fad0c4);
+    text-align:center;
+    color:#333;
+}
+
+header{
+    padding:60px;
+    background:#ff6f61;
+    color:white;
+}
+
+
+header h1{
+    font-size:60px;
+    animation: glow 2s infinite alternate;
+}
+
+header p{
+    font-size:22px;
+}
+
+section{
+    padding:50px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.message{
+    background:white;
+    border-radius:15px;
+    padding:40px;
+    max-width:800px;
+    margin:auto;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.countdown{
+    font-size:40px;
+    color:#ff4d4d;
+}
+
+footer{
+    padding:20px;
+    background:#222;
+    color:white;
+}
+
+button{
+    padding:15px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    background:#ff6f61;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ff3b2e;
+}
+
+canvas{
+position:fixed;
+top:0;
+left:0;
+pointer-events:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<audio autoplay loop>
+<source src="birthday.mp3" type="audio/mp3">
+</audio>
+
+<header>
+<h1>🎉 Happy Birthday claaaaaaaaaaaaaaa 🎉</h1>
+<p>The best brother in the world!</p>
+</header>
+
+<section>
+<h2>⏳ Birthday Countdown</h2>
+<div class="countdown" id="countdown"></div>
+</section>
+
+<section class="message">
+<h2>💌 A Special Message</h2>
+<p>
+Dear Brother,<br><br>
+You are not just my brother but my best friend, my guide, and my hero.  
+Thank you for always supporting me and making life fun.  
+
+May your birthday be filled with happiness, success, and lots of cake! 🎂  
+
+Happy Birthday once again!
+</p>
+</section>
+
+<section>
+<h2>📸 Memories</h2>
+
+<div class="gallery">
+
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+<img src="photo4.jpg">
+
+</div>
+
+</section>
+
+<section>
+<h2>🎁 Click for Surprise</h2>
+<button onclick="showMessage()">Click Me</button>
+
+<p id="surprise"></p>
+
+</section>
+
+<footer>
+<p>Made with ❤️ for the best brother</p>
+</footer>
+
+<canvas id="confetti"></canvas>
+
+<script>
+
+// Countdown
+var birthday = new Date("July 10, 2026 00:00:00").getTime();
+
+var x = setInterval(function(){
+
+var now = new Date().getTime();
+var distance = birthday - now;
+
+var days = Math.floor(distance / (10000000000*6*6*4));
+var hours = Math.floor((distance % (100*6*6*4)) / (100*6*6));
+var minutes = Math.floor((distance % (1000000*6*6)) / (100*6));
+var seconds = Math.floor((distance % (10000000000*6)) / 100);
+
+document.getElementById("countdown").innerHTML =
+days+"d "+hours+"h "+minutes+"m "+seconds+"s ";
+
+},1000);
+
+
+// Surprise button
+function showMessage(){
+document.getElementById("surprise").innerHTML =
+"🎉 You are the best brother ever! 🎂";
+}
+
+
+// Confetti animation
+var canvas = document.getElementById("confetti");
+var ctx = canvas.getContext("2d");
+
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+var pieces = [];
+
+for(var i=0;i<100;i++){
+pieces.push({
+x:Math.random()*canvas.width,
+y:Math.random()*canvas.height,
+size:Math.random()*10+5,
+speed:Math.random()*3+1
+});
+}
+
+function draw(){
+ctx.clearRect(0,0,canvas.width,canvas.height);
+
+for(var i=0;i<pieces.length;i++){
+
+var p = pieces[i];
+
+ctx.fillStyle = "hsl(" + Math.random()*360 + ",100%,50%)";
+ctx.fillRect(p.x,p.y,p.size,p.size);
+
+p.y += p.speed;
+
+if(p.y > canvas.height){
+p.y = 0;
+}
+}
+
+requestAnimationFrame(draw);
+}
+
+draw();
+
+</script>
+
+</body>
+</html>
