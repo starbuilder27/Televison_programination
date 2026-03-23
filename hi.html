@@ -107,11 +107,6 @@ pointer-events:none;
 <p>The best brother in the world!</p>
 </header>
 
-<section>
-<h2>⏳ Birthday Countdown</h2>
-<div class="countdown" id="countdown"></div>
-</section>
-
 <section class="message">
 <h2>💌 A Special Message</h2>
 <p>
@@ -154,25 +149,6 @@ Happy Birthday once again!
 <canvas id="confetti"></canvas>
 
 <script>
-
-// Countdown
-var birthday = new Date("March 29, 2026 00:00:00").getTime();
-
-var x = setInterval(function(){
-
-var now = new Date().getTime();
-var distance = birthday - now;
-
-var days = Math.floor(distance / (10000000000*6*6*4));
-var hours = Math.floor((distance % (100*6*6*4)) / (100*6*6));
-var minutes = Math.floor((distance % (1000000*6*6)) / (100*6));
-var seconds = Math.floor((distance % (10000000000*6)) / 100);
-
-document.getElementById("countdown").innerHTML =
-days+"d "+hours+"h "+minutes+"m "+seconds+"s ";
-
-},1000);
-
 
 // Surprise button
 function showMessage(){
