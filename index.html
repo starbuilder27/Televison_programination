@@ -7,6 +7,9 @@
   <title>my first file</title>
    <script src="https://kit.fontawesome.com/2b41c1e21e.js" crossorigin="anonymous"></script>
 <style>
+
+  
+
   body{
     background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQB0YphXuhEvFoD3hMg5iSeLCBmLXT1R4FXg&s');
     background-size: cover;
@@ -23,10 +26,11 @@
        overflow:auto; 
         
     }
-    #e{
-        text-align: center;
-    }
+  
+    
     *{font-family: "Algerian", serif;}
+
+    
   </style>
 
 </head>
@@ -219,29 +223,26 @@ h1{
     in the 1980s. The 1990s introduced CGI (Pixar's Toy Story), diverse genres, streaming, and the rise of networks like
     Cartoon Network.</h3>
 
-  <ul>
-    <li>
-      <h4> <u>Ancient Roots :</u> <i>Cave drawings with sequential limbs,<mark><b>Egyptian tomb art</b></mark>, and Greek pottery show
+  
+  <h4> <u>*   Ancient Roots :</u> <i>Cave drawings with sequential limbs,<mark><b>Egyptian tomb art</b></mark>, and Greek pottery show
         early interest in depicting movement.</i></h4>
-    </li>
+    
 
 
-    <li>
-      <h4><u>Optical Toys:</u><i> Devices like the Phenakistoscope<mark><b>(1832) and Zoetrope (1834)</b></mark> used persistence of vision
+    
+  <h4><u>*   Optical Toys:</u><i> Devices like the Phenakistoscope<mark><b>(1832) and Zoetrope (1834)</b></mark> used persistence of vision
           to create movement from drawings.</i></h4>
-    </li>
+    
 
-    <li>
-      <h4><u>Political Cartoons:</u><i> Early <mark><b>19th-century</b></mark> newspapers used cartoons for social 
+    
+  <h4><u>*   Political Cartoons:</u><i> Early <mark><b>19th-century</b></mark> newspapers used cartoons for social 
         commentary (e.g., Punch
-          magazine).</i></h4>
-    </li>
-
-    <li>
-      <h4><u>Film Experiments:</u><i> Émile Reynaud's Théâtre Optique<mark><b> (1892)</b></mark> projected hand-painted images, considered
+          magazine),they combine art and satire too.</i></h4>
+    
+  <h4><u>*   Film Experiments:</u><i> Émile Reynaud's Théâtre Optique<mark><b> (1892)</b></mark> projected hand-painted images, considered
           first public animated films.</i></h4>
-    </li>
-  </ul>
+    
+  
   <p id="ghf"> A cartoon is a type of visual art that is typically drawn, frequently animated, in an unrealistic or
     semi-realistic style. The specific meaning has evolved, but the modern usage usually refers to either: an image or
     series of images intended for satire, caricature, or humor; or a motion picture that relies on a sequence of
@@ -272,18 +273,17 @@ h1{
     work.</p>
   <hr>
   <u><i>
-      <h2>Cartoons can be divided into<mark><b> gag cartoons</b></mark>, which include editorial cartoons, and comic strips.</h2>
+      <h2>Cartoons can also be divided into<mark><b> Gag cartoons</b></mark>, which include <mark>Editorial cartoons</mark>, and<mark> Comic strips</mark>in it</h2>
     </i></u>
 
   <h4><u>
       <> Gag cartoons <>
     </u></h4>
 
-  <ul>
     <i>
-      <li>Editorial cartoons </li>
-    </i>
-  </ul>
+    Editorial cartoons </i>
+
+  
 
    
 
@@ -309,12 +309,9 @@ h1{
 
   <h2><u><i>So lets learn about our second heading and that is.....</i></u></h2>
 
-  <ul>
-    <i>
-      <li>Comic strips</li>
-    </i>
-  </ul>
-
+  
+      <i>Comic strips</i>
+    
   The history of comic strips can be traced from<mark><b> ancient forms of sequential art to their emergence as a mass medium in
   newspapers,</b></mark> and their modern evolution into<mark><b> digital formats and graphic novels.</b></mark>
 
@@ -358,86 +355,7 @@ h1{
     </script>
     <img id="e" src="photo-1575936123452-b67c3203c357.avif" width="70" height="80" onmouseover="big_image(this)" onmouseout="normal_image(this)">
 
-        <h1><u><i>Welcome to the Homework Section! Here, you can practice and solve mathematics problems with ease. Currently, this section includes Cube and Sum calculators to help you check answers, improve accuracy, and strengthen your math skills.</u></i><h1>
-    <script>
-        function cube()
-        {
-        var a=document.getElementById("value1").value;
-        
-         document.getElementById("demo").innerHTML=a*a*a;
-        }
-    </script>
-
-      <input type="text" id="value1" placeholder="Enter the number">
-      <button type="button"onclick="cube()">Cube</button><br><br>
-      <p id="demo"></p>
-
-       <script>
-       function add()
-        {
-            var n2=parseInt(document.getElementById("value2").value);    
-            var n3=parseInt(document.getElementById("value3").value);
-            var sum=n2+n3
-
-            document.getElementById("yht").innerHTML=sum;
-        }
-    </script>
-
-    
-    <input type="text"placeholder="Enter first number" id="value2">
-    <input type="text"placeholder="Enter second number" id="value3">
-    <button type="button" onclick="add()">Addition</button>
-    <p id="yht"></p>
-
-    <script>
-       function subtract()
-        {
-        var n8 = parseFloat(document.getElementById("value8").value) || 0;
-        var n7 = parseFloat(document.getElementById("value7").value) || 0;
-        var diff = n8 - n7;
-
-        document.getElementById("yki").innerHTML = diff;
-      }
-      function multiply()
-      {
-        var n8 = parseFloat(document.getElementById("value8").value) || 0;
-        var n7 = parseFloat(document.getElementById("value7").value) || 0;
-        var prod = n8 * n7;
-        document.getElementById("yki").innerHTML = prod;
-      }
-      function divide()
-      {
-        var n8 = parseFloat(document.getElementById("value8").value) || 0;
-        var n7 = parseFloat(document.getElementById("value7").value);
-        var res = (n7 === 0) ? 'Cannot divide by 0' : (n8 / n7);
-        document.getElementById("yki").innerHTML = res;
-      }
-      function allResults()
-      {
-        var a = parseFloat(document.getElementById("value8").value) || 0;
-        var b = parseFloat(document.getElementById("value7").value) || 0;
-        var c = parseFloat(document.getElementById("value1").value) || 0; // cube input
-        var add = a + b;
-        var sub = a - b;
-        var mul = a * b;
-        var div = (b === 0) ? 'Cannot divide by 0' : (a / b);
-        var cube = c * c * c;
-        document.getElementById("allResults").innerHTML =
-          '<div style="display:flex;justify-content:center;gap:20px;align-items:center;">'
-          + '<div style="font-weight:bold;">Add | Subtract | Multiply | Divide | Cube</div>'
-          + '<div>' + add + ' | ' + sub + ' | ' + mul + ' | ' + div + ' | ' + cube + '</div>'
-          + '</div>';
-      }
-    </script>
-    
-    <input type="text" placeholder="Enter first number" id="value8">
-    <input type="text" placeholder="Enter second number" id="value7">
-    <button type="button" onclick="subtract()">Subtract</button>
-    <button type="button" onclick="multiply()">Multiply</button>
-    <button type="button" onclick="divide()">Divide</button>
-    <button type="button" onclick="allResults()">Show All</button>
-    <p id="yki"></p>
-    <div id="allResults" style="margin-top:8px"></div>
+      
 
     <i class="fas fa-circle-user"></i>           <i class="fas fa-trophy"></i><br><br><i class="fas fa-anchor"></i><i class="fas fa-phone"></i>      <i class="fas fa-clock"></i>    <br><br><i class="fas fa-image"></i>      <i class="fas fa-utensils"></i> 
  

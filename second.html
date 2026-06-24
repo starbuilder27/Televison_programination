@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        #what {
+            background-color: white;
+            color: yellowgreen;
+            text-align: center;
+        }
         .a {
             background-color: blue;
             color: white;
@@ -319,9 +324,192 @@
         to make it as a movie for clear understanding,
         and it's Historical story of past and it also tells about past time people
         and their lifestyle </h3>
-                                                                                                                                                                                                                                                
-Click here bhaiya for your birthday gift<a href="brother.html" target="_blank">Click here</a>
-Click here bhaiya for your birthday gift<a href="hi.html" target="_blank">Click here</a>
-</body>
 
-</html>
+          <h1 id="what" ><u><i>Welcome to the Homework Section! Here, you can practice and solve mathematics problems easly. Currently, this section includes Cube and Sum calculators to help you check answers, improve accuracy, and strengthen your math skills.</u></i><h1>
+    <script>
+        function cube()
+        {
+        var a=document.getElementById("value1").value;
+        
+         document.getElementById("demo").innerHTML=a*a*a;
+        }
+    </script>
+
+      <input type="text" id="value1" placeholder="Enter the number">
+      <button type="button"onclick="cube()">Cube</button><br><br>
+      <p id="demo"></p>
+
+       <script>
+       function add()
+        {
+            var n2=parseInt(document.getElementById("value2").value);    
+            var n3=parseInt(document.getElementById("value3").value);
+            var sum=n2+n3
+
+            document.getElementById("yht").innerHTML=sum;
+        }
+    </script>
+
+    
+    <input type="text"placeholder="Enter first number" id="value2">
+    <input type="text"placeholder="Enter second number" id="value3">
+    <button type="button" onclick="add()">Addition</button>
+    <p id="yht"></p>
+
+    <script>
+       function subtract()
+        {
+        var n8 = parseFloat(document.getElementById("value8").value) || 0;
+        var n7 = parseFloat(document.getElementById("value7").value) || 0;
+        var diff = n8 - n7;
+
+        document.getElementById("yki").innerHTML = diff;
+      }
+      function multiply()
+      {
+        var n8 = parseFloat(document.getElementById("value8").value) || 0;
+        var n7 = parseFloat(document.getElementById("value7").value) || 0;
+        var prod = n8 * n7;
+        document.getElementById("yki").innerHTML = prod;
+      }
+      function divide()
+      {
+        var n8 = parseFloat(document.getElementById("value8").value) || 0;
+        var n7 = parseFloat(document.getElementById("value7").value);
+        var res = (n7 === 0) ? 'Cannot divide by 0' : (n8 / n7);
+        document.getElementById("yki").innerHTML = res;
+      }
+      function sinTrig()
+      {
+        var degEl = document.getElementById("value_trig");
+        var deg = degEl ? (parseFloat(degEl.value) || 0) : 0;
+        var rad = deg * Math.PI / 180;
+        var s = Math.sin(rad);
+        document.getElementById("yki").innerHTML = 'sin(' + deg + '°) = ' + s;
+      }
+      function cosTrig()
+      {
+        var degEl = document.getElementById("value_trig");
+        var deg = degEl ? (parseFloat(degEl.value) || 0) : 0;
+        var rad = deg * Math.PI / 180;
+        var c = Math.cos(rad);
+        document.getElementById("yki").innerHTML = 'cos(' + deg + '°) = ' + c;
+      }
+      function tanTrig()
+      {
+        var degEl = document.getElementById("value_trig");
+        var deg = degEl ? (parseFloat(degEl.value) || 0) : 0;
+        var rad = deg * Math.PI / 180;
+        var co = Math.cos(rad);
+        if (Math.abs(co) < 1e-12) {
+          document.getElementById("yki").innerHTML = 'tan(' + deg + '°) = undefined';
+          return;
+        }
+        var t = Math.tan(rad);
+        document.getElementById("yki").innerHTML = 'tan(' + deg + '°) = ' + t;
+      }
+      function allResults()
+      {
+        var a = parseFloat(document.getElementById("value8").value) || 0;
+        var b = parseFloat(document.getElementById("value7").value) || 0;
+        var c = parseFloat(document.getElementById("value1").value) || 0; // cube input
+        var addA = parseFloat(document.getElementById("value2").value) || 0; // addition inputs
+        var addB = parseFloat(document.getElementById("value3").value) || 0;
+        var degEl = document.getElementById("value_trig");
+        var deg = degEl ? (parseFloat(degEl.value) || 0) : 0;
+        var addition = addA + addB;
+        var sub = a - b;
+        var mul = a * b;
+        var div = (b === 0) ? 'Cannot divide by 0' : (a / b);
+        var cube = c * c * c;
+        var rad = deg * Math.PI / 180;
+        var s = Math.sin(rad);
+        var co = Math.cos(rad);
+        var t = (Math.abs(co) < 1e-12) ? 'undefined' : Math.tan(rad);
+        document.getElementById("allResults").innerHTML =
+          '<div style="display:flex;flex-direction:column;align-items:center;">'
+          + '<div style="font-weight:bold;">Addition | Subtract | Multiply | Divide | Cube | sin | cos | tan</div>'
+          + '<div>' + addition + ' | ' + sub + ' | ' + mul + ' | ' + div + ' | ' + cube + ' | ' + s + ' | ' + co + ' | ' + t + '</div>'
+          + '</div>';
+      }
+    </script>
+    
+    <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;">
+      <input type="text" placeholder="Enter first number" id="value8" style="width:140px">
+      <input type="text" placeholder="Enter second number" id="value7" style="width:140px">
+      <input type="text" placeholder="Angle (deg)" id="value_trig" style="width:120px">
+      <button type="button" onclick="subtract()">Subtract</button>
+      <button type="button" onclick="multiply()">Multiply</button>
+      <button type="button" onclick="divide()">Divide</button>
+      <button type="button" onclick="sinTrig()">Sin</button>
+      <button type="button" onclick="cosTrig()">Cos</button>
+      <button type="button" onclick="tanTrig()">Tan</button>
+      <button type="button" onclick="allResults()">Show All</button>
+    </div>
+    <p id="yki"></p>
+    <div id="allResults" style="margin-top:8px"></div>
+
+    <!-- Full Calculator: display + keypad -->
+    <style>
+      .calculator{width:320px;background:#fff;border-radius:12px;padding:12px;margin:18px auto;box-shadow:0 6px 18px rgba(0,0,0,0.12);}
+      .calc-display{width:100%;height:44px;font-size:20px;padding:6px 10px;border-radius:6px;border:1px solid #ccc;margin-bottom:10px;box-sizing:border-box}
+      .calc-keys{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+      .calc-keys button{padding:12px;font-size:18px;border-radius:8px;border:1px solid #bbb;background:#f6f6f6;cursor:pointer}
+      .calc-keys button.operator{background:#ffd6a5}
+      .calc-keys button.equals{grid-column: span 2; background:#9ad3bc}
+      .calc-keys button.clear{background:#ff9b9b}
+    </style>
+
+    <div class="calculator" id="calculator">
+      <input id="calcDisplay" class="calc-display" placeholder="0" aria-label="Calculator display">
+      <div class="calc-keys">
+        <button class="clear" onclick="calcPress('C')">C</button>
+        <button onclick="calcPress('(')">(</button> 
+        <button onclick="calcPress(')')">)</button>
+        <button class="operator" onclick="calcPress('/')">÷</button>
+
+        <button onclick="calcPress('7')">7</button>
+        <button onclick="calcPress('8')">8</button>
+        <button onclick="calcPress('9')">9</button>
+        <button class="operator" onclick="calcPress('*')">×</button>
+
+        <button onclick="calcPress('4')">4</button>
+        <button onclick="calcPress('5')">5</button>
+        <button onclick="calcPress('6')">6</button>
+        <button class="operator" onclick="calcPress('-')">−</button>
+
+        <button onclick="calcPress('1')">1</button>
+        <button onclick="calcPress('2')">2</button>
+        <button onclick="calcPress('3')">3</button>
+        <button class="operator" onclick="calcPress('+')">+</button>
+
+        <button onclick="calcPress('0')">0</button>
+        <button onclick="calcPress('.')">.</button>
+        <button onclick="calcPress('←')">←</button>
+        <button class="equals" onclick="calcPress('=')">=</button>
+      </div>
+    </div>
+
+    <script>
+      function calcPress(val){
+        var d = document.getElementById('calcDisplay');
+        if(!d) return;
+        if(val === 'C'){ d.value = ''; return; }
+        if(val === '←'){ d.value = d.value.slice(0,-1); return; }
+        if(val === '='){ calculate(); return; }
+        d.value = (d.value === '0') ? String(val) : (d.value + String(val));
+      }
+      function calculate(){
+        var d = document.getElementById('calcDisplay');
+        if(!d) return;
+        var expr = d.value.replace(/×/g,'*').replace(/÷/g,'/');
+        // Only allow digits, operators, parentheses, dot and spaces
+        if(!/^[0-9+\-*/().\s]+$/.test(expr)){ d.value = 'Error'; return; }
+        try{
+          var result = Function('"use strict"; return ('+expr+');')();
+          if(result === Infinity || result === -Infinity || Number.isNaN(result)) d.value = 'Error';
+          else d.value = result;
+        }catch(e){ d.value = 'Error'; }
+      }
+    </script>
+                                                                                                                                                                                                                                                
